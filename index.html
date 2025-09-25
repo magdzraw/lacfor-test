@@ -16,6 +16,30 @@
             text-align: center;
             color: #333;
             margin-top: 8px;
+            margin-bottom: 5px;
+        }
+        
+        .subtitle {
+    text-align: center;
+    font-size: 0.9em;
+    color: #000000;
+    background-color:
+    padding: 10px;
+    border: 1px solid #e6dbb3;
+    border-radius: 5px;
+    margin: 10px 0 20px 0;
+}
+
+        .subtitle img {
+            width: 16px;
+            height: 16px;
+            vertical-align: middle;
+            margin-left: 5px;
+            transition: opacity 0.2s;
+        }
+
+        .subtitle a:hover img {
+            opacity: 0.7;
         }
         
         .image-container {
@@ -49,19 +73,27 @@
 <body>
 
 <div class="image-container">
- <img src="genfo_logo2.png" alt="logo GENFOMEC" width="120" height="150">
- <img src="cyted_logo.png" alt="logo CYTED" width="100">
- <img src="Isologo_lacforgen.png" alt="logo LACFORGEN" width="100"> </div>
+    <img src="genfo_logo2.png" alt="logo GENFOMEC" width="120" height="150">
+    <img src="cyted_logo.png" alt="logo CYTED" width="100">
+    <img src="Isologo_lacforgen.png" alt="logo LACFORGEN" width="100">
+</div>
 
-<h1>Mapa de estudios moleculares en ALAC</h1>
+<h1>Mapa de estudios moleculares sobre especies forestales en América Latina y el Caribe (ALAC) </h1>
 
-    <div class="powerbi-container">
-        <iframe title="DASH_DEF_LAC_corr" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiOTI0YzcwMWItYWU3Yy00MjE5LThkYjItZTY5ODJlMGEzOTZiIiwidCI6IjU2NTgyYjllLTg4MjQtNDlkMC1hNjY1LWNkMzI4YzBlMDA0YSIsImMiOjR9&navContentPaneEnabled=false" 
-                frameborder="0" 
-                allowFullScreen="true">
-        </iframe>
-    </div>
+<p class="subtitle">
+    Para agregar nuevos registros a la encuesta del proyecto GENFOMEC de LACFORGEN pinchar aquí
+    <a href="https://forms.gle/6DydmTbvEBsdDhqt8" target="_blank" title="Abrir encuesta en una nueva pestaña">
+        <img src="cyted_logo.png" alt="Icono de enlace a la encuesta">
+    </a>
+</p>
+
+<div class="powerbi-container">
+    <iframe title="DASH_DEF_LAC_corr" 
+            src="https://app.powerbi.com/view?r=eyJrIjoiOTI0YzcwMWItYWU3Yy00MjE5LThkYjItZTY5ODJlMGEzOTZiIiwidCI6IjU2NTgyYjllLTg4MjQtNDlkMC1hNjY1LWNkMzI4YzBlMDA0YSIsImMiOjR9&navContentPaneEnabled=false" 
+            frameborder="0" 
+            allowFullScreen="true">
+    </iframe>
+</div>
 
 </body>
 </html>
